@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+    color: #333;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    background: url('./img/img2.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+    color: white;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    color: #ffdc2b;
+}
+
+.header-content .subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.maintenance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.text {
+    flex: 1 1 400px;
+    text-align: left;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.text p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.image {
+    flex: 1 1 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 40vh;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .text h2 {
+        font-size: 1.6rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+}
